@@ -1,0 +1,3 @@
+
+<app-todo-item  *ngFor="let todo of this.todoService.todos$ | async" [todo]="todo"></app-todo-item>
+<button mat-button (click)="this.addRandomTodo()">Add to-do</button>
